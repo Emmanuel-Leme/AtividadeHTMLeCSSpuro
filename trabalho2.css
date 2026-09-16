@@ -1,0 +1,200 @@
+/* Tirei a margem padrão da página e deixei tudo mais organizado */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Deixei a página com uma fonte mais simples de ler */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Estilo do título principal */
+#titulo-principal {
+  background-color: #006b3c;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  font-size: 32px;
+}
+
+/* Essa parte controla o espaço onde ficam as informações */
+.conteudo {
+  width: 90%;
+  max-width: 1000px;
+  margin: 30px auto;
+}
+
+/* Cada parte do trabalho fica separada dessa forma */
+.secao {
+  background-color: white;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos das partes do site */
+.secao h2 {
+  color: #006b3c;
+  margin-bottom: 15px;
+}
+
+/* Deixei os parágrafos um pouco mais separados */
+.secao p {
+  margin-bottom: 12px;
+}
+
+/* Ajustei o espaço das listas */
+.secao ul,
+.secao ol {
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+/* Essa parte é para destacar a sequência dos gols */
+.lista-gols {
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-left: 5px solid #006b3c;
+}
+
+/* Muda a cor dos links */
+a {
+  color: #006b3c;
+  text-decoration: none;
+}
+
+/* Quando passar o mouse no link, ele fica sublinhado */
+a:hover {
+  text-decoration: underline;
+  color: #004d2c;
+}
+
+/* Usei esse seletor para o link que abre em outra aba */
+a[target="_blank"] {
+  font-weight: bold;
+}
+
+/* Destaque que coloquei na parte sobre o Coritiba */
+.destaque-coxa {
+  border-left: 6px solid #006b3c;
+}
+
+/* Deixei o nome do destaque mais chamativo */
+.destaque-coxa h3 {
+  color: #006b3c;
+  margin-bottom: 10px;
+}
+
+/* Ajustei o tamanho da imagem do Couto Pereira */
+.imagem-couto {
+  width: 100%;
+  max-width: 700px;
+  display: block;
+  margin: 15px auto;
+  border-radius: 8px;
+  border: 3px solid #006b3c;
+}
+
+/* Estilo da tabela com o resultado */
+.tabela-placar {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+/* Espaço dentro das células da tabela */
+.tabela-placar th,
+.tabela-placar td {
+  border: 1px solid #999;
+  padding: 12px;
+  text-align: center;
+}
+
+/* Cabeçalho da tabela */
+.tabela-placar th {
+  background-color: #006b3c;
+  color: white;
+}
+
+/* Coloquei uma cor diferente nas linhas pares para facilitar a leitura */
+.tabela-placar tbody tr:nth-child(even) {
+  background-color: #eeeeee;
+}
+
+/* Quando passar o mouse em uma linha, ela fica destacada */
+.tabela-placar tbody tr:hover {
+  background-color: #d9f0e4;
+}
+
+/* Deixei o formulário mais organizado */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Estilo dos campos do formulário */
+.formulario input,
+.formulario select {
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+/* Quando clicar em um campo, ele fica destacado */
+.formulario input:focus,
+.formulario select:focus {
+  outline: 2px solid #006b3c;
+}
+
+/* Campo de nome */
+input[type="text"] {
+  background-color: #fafafa;
+}
+
+/* Campo de e-mail */
+input[type="email"] {
+  background-color: #fafafa;
+}
+
+/* Botão de enviar */
+button[type="submit"] {
+  background-color: #006b3c;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Muda um pouco o botão quando passar o mouse */
+button[type="submit"]:hover {
+  background-color: #004d2c;
+}
+
+/* Parte final da página */
+.mensagem-final {
+  text-align: center;
+  background-color: #006b3c;
+  color: white;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+/* Coloquei um detalhe antes do texto final */
+.mensagem-final::before {
+  content: "⚽ ";
+}
+
+/* Outro detalhe depois do texto final */
+.mensagem-final::after {
+  content: " ⚽";
+}
